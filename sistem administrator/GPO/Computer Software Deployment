@@ -1,0 +1,29 @@
+## Computer Software Deployment-Uzaktan Proqram Kurulumu.
+
+
+Bunun esas mahiyyeti odur ki, ister grouplara istersede userlere komputerine ne isteyirikse yukleye bilerik yanina getmeden
+
+
+GPO'da "Computer Software Deployment" (Bilgisayar Yazılımı Dağıtımı), bilgisayar hesaplarına bağlı olarak belirli yazılımların dağıtılmasını ifade eder. 
+Bu, bir ağdaki bir veya daha fazla bilgisayara bir yazılımın otomatik olarak yüklenmesi ve kurulması anlamına gelir.
+
+
+#Icra
+
+1.C-diskinde  de  "proqramlar" adinda  qovluq yaradiriq ki butun komputerler ortaq istifade ede bilerik.
+2. "Share" edek.
+
+qeyd: Gizli paylasmaq ucun Share name: de qoyulacaq addan sonra  $ isaresi qoyulur.   ("PROQRAMLAR$" )
+
+3. daha sonra proqramlarin icin aciriq ve daxiline ".msi "uzantili dosyalar ataq cunki yuklenecek dosyalarin uzantisi msi olmalidir.Yeni GPO  i terefinden dagitilan dosyalar mni uzantili olmali ve
+    bele oldugda kurulumu diger masinlarda da ede bilerik.  (misal ucun:radminserv35tr.msi ve s)
+
+
+4. misal olaraq bunun uzerinde izah edek:    daha sonra domain altinda:  yasin.com > ANKARA > (Sag duyme) New GPO  ( AnkaraKullanici Program adinda         policy yaradiriq) :     sonra >> ANKARA adi altinda  AnkaraKullanici Program policy yaranir >>
+  >> sonra sag duyme "Edit"   edirik >> sonra 2 basliq acilir  "Computer Configuration" ve "User Configuration"     burada   eger "Comp Conf "  de policye daxil olsaq burada eyni sey olacaq
+bilgisayar makinaya kurululacaq    >>   ama biz " User Config" daxilinde olan  >> "Software Settings" uzerinde +Sag duyme +  "New" >>  "Package"    deyirik vee budur bizde evvelceden 
+C diskinde yaratdigimiz "PROQRAMLAR$" i  ice aktariq  >> ve yolun gosterik    \\dc1\proqramlar$  >> daha sonra "PROQRAMLAR$"   in ici acilir ve  ".msi" dosyalarin secirik ve "OPEN"
+ deyirik >>   daha sonra "Deploy Software"   acilir  vee yukleme metodun sorusur bizden    "Select deployment method:"     1. Published :  koputer acilan zaman kurulum ekrani gelir  
+2.Advance: ise  derhal kurulumu baslatsin deyirik.  >>>>>  daha sonra acilan pencerede  "RADMIN SERVER 3.5 Properties "    penceresi acilir ve   >>>>   "Deployment" e daxil oluruq 
+>>>> "Assigned "  ve "Install this  application on logon" butonuna basiirq   ki makinaya logon olanda install edecek  >>>  
+
