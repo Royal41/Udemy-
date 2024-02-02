@@ -6,4 +6,4 @@ istifadecilerin parollarin resetlemeyi veririk buna delegate control deyiriler:
 
 #icra
 
-geliril departament uzerinde sag duyme + delegate control edirik
+geliril departament uzerinde sag duyme + delegate control edirik.
