@@ -1,0 +1,17 @@
+## Group Policy APPLOCKER - Uygulama Kısitlama:
+
+istofadesi:
+
+GPO da < BILGISAYARLAR > uzerine gelib yeni GPO yaradiriq
+"Proqram Kisitlama" adina Policy yaradiriq
+Sag duyme  < Edit >
+< Computer Configuration >
+< Security Settings >
+ vee
+ << APPLICATION CONTROL POLICY >>  a daxil oluruq.
+<<< APPLOCKER >>>
+burada islem etmezden evvel gelirik: <<System Service >> de 
+<<  Aplication Identity Properties >> i  " Automatic " qoyuruq  cunki bu aktiv olmadan diger makine uzerinde  bu uygulamani islede bilmerik.
+
+"APPLOCKER" de <<< Executable Rules >>> da sag duyme << Create New Rule >>  ediirk. 
+<<deny>>  <<path>>  
