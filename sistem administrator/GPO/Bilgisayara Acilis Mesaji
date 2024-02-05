@@ -1,4 +1,10 @@
-## Computer Gruo Policy - Bilgisayarlara Acilis Mesaji
+## Computer Grup  Policy - Bilgisayarlara Acilis Mesaji
 
 
- 
+### Misal olaraq user and computer de "BILGISAYARLAR" adinda OU yaradiriq ve icine komputerler elave edirik ki, GPO da vereceyimiz "Acilis mesaji"  o komputere getsin:
+
+
+bunun ucun:
+
+BILGISAYARLAR  uzerinde >> sag duyme  >> new GPO  >>  Acilis mesaji >> daha sonra acilis mesaji uzerinde sag duyme  >> edit  >>  Computer Configuration   >> Policies >> Windows Settings >>>  Security Settings  >>
+>> Local Policies >>  Secuirty Options >>  INteractive Logon: "Message text"..... ve ..."Message title ".. ne isteyirik onuda yazirq
